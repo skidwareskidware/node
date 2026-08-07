@@ -40,7 +40,7 @@ local Library = {
     MainColor = Color3.fromRGB(0, 0, 0),
     BackgroundColor = Color3.fromRGB(15, 15, 15),
     StrokeColor = Color3.fromRGB(50, 50, 50),
-    AccentColor = Color3.fromRGB(138, 28, 138),
+    AccentColor = Color3.fromRGB(73, 227, 0),
     DeselectedColor = Color3.fromRGB(180, 180, 180),
 
     Black = Color3.new(0, 0, 0),
