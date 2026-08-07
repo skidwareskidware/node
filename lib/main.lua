@@ -1,5 +1,5 @@
-if shared.ratfunLibrary then shared.ratfunLibrary:Unload() end
-local StartTime = shared.ratfunDebug and os.clock()
+if shared.nodeLibrary then shared.nodeLibrary:Unload() end
+local StartTime = shared.nodeDebug and os.clock()
 
 --// Initialization 
 local cloneref = cloneref or function(...) return ... end 
@@ -1801,6 +1801,6 @@ function Library:ConfigManager(Window)
     
 end
 
-if shared.ratfunDebug then Library:Notify(string.format("Loaded in %.2f seconds!", os.clock() - StartTime), "Success") end
-shared.ratfunLibrary = Library
+if shared.nodeDebug then Library:Notify(string.format("Loaded in %.2f seconds!", os.clock() - StartTime), "Success") end
+shared.nodeLibrary = Library
 return Library
