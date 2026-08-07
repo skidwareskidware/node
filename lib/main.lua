@@ -854,7 +854,7 @@ function Library:Window(Version)
         FillDirection = Enum.FillDirection.Horizontal,
         HorizontalAlignment = Enum.HorizontalAlignment.Right,
         SortOrder = Enum.SortOrder.LayoutOrder,
-        Padding = UDim.new(0, 3), -- Add this line for 8px spacing between tabs
+        Padding = UDim.new(0, 1), -- Add this line for 8px spacing between tabs
         Parent = TabsFrame
     })
 
