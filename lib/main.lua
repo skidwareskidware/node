@@ -54,16 +54,16 @@ local Library = {
     ScreenGui = ScreenGui
 }
 
-for _, Folder in next, {"rat.fun", "rat.fun/configs", "rat.fun/assets"} do
+for _, Folder in next, {"node", "node/configs", "node/assets"} do
     if not isfolder(Folder) then
         makefolder(Folder)
     end
 end
 
 local Assets = {
-    ["rat.fun/assets/resize.png"] = "rbxassetid://102131664028298",
-    ["rat.fun/assets/logo.png"] = "rbxassetid://88050385377789",
-    ["rat.fun/assets/transparency.png"] = "rbxassetid://105632977311596",
+    ["node/assets/resize.png"] = "rbxassetid://102131664028298",
+    ["node/assets/logo.png"] = "rbxassetid://88050385377789",
+    ["node/assets/transparency.png"] = "rbxassetid://105632977311596",
 }
 
 function Library:Unload()
@@ -782,7 +782,7 @@ function Library:Window(Version)
         Position = UDim2.fromScale(1, 1),
         BackgroundTransparency = 1,
         ImageColor3 = Library.StrokeColor,
-        Image = Assets["rat.fun/assets/resize.png"] or "",
+        Image = Assets["node/assets/resize.png"] or "",
         Size = UDim2.fromOffset(12, 12),
         Parent = WindowFrame
     })
@@ -1624,9 +1624,9 @@ function Library:ConfigManager(Window)
     local UISection = SettingsTab:Section("interface")
     local ConfigSection = SettingsTab:Section("configuration")
     local ColorSection = SettingsTab:Section("color")
-    if not isfolder(`rat.fun/configs/{game.PlaceId}`) then makefolder(`rat.fun/configs/{game.PlaceId}`) end
-    local ConfigFolder = `rat.fun/configs/{game.PlaceId}`
-    local AutoloadPath = `rat.fun/configs/{game.PlaceId}/autoload.txt`
+    if not isfolder(`node/configs/{game.PlaceId}`) then makefolder(`node/configs/{game.PlaceId}`) end
+    local ConfigFolder = `node/configs/{game.PlaceId}`
+    local AutoloadPath = `node/configs/{game.PlaceId}/autoload.txt`
     local CurrentConfigName = ""
     local SelectedConfig = nil
     
