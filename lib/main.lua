@@ -119,7 +119,7 @@ end
 
 function Library:UpdateColors()
     Library.DarkerAccentColor = ModifyBrightness(Library.AccentColor, -0.185)
-    local Text = `rat{ColorText(".fun", Library.AccentColor)}<font color="#{Library.DeselectedColor:ToHex()}"> v{Library.Version}</font>`
+    local Text = `{ColorText("node", Library.AccentColor)}<font color="#{Library.DeselectedColor:ToHex()}"> v{Library.Version}</font>`
     if Library.Title then Library.Title.Text = Text end
 
     for Object, Properties in next, Library.Registry do
