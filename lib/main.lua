@@ -840,7 +840,7 @@ function Library:Window(Version)
         TextColor3 = Library.TextColor,
         TextSize = 14,
         RichText = true,
-        Text = `rat{ColorText(".fun", Library.AccentColor)}<font color="#{Library.DeselectedColor:ToHex()}"> v{Version}</font>`,
+        Text = `{ColorText("node", Library.AccentColor)}<font color="#{Library.DeselectedColor:ToHex()}"> v{Version}</font>`,
         Parent = TitleFrame
     }) Title.Size = UDim2.new(0, Title.TextBounds.X, 1, 0)
 
